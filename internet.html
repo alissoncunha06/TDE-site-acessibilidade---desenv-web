@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="pular" href="#conteudo" accesskey="1">Pular para o conteúdo</a>
+  <a class="pular" href="#menu" accesskey="2">Pular para o menu</a>
+  <a class="pular" href="#rodape" accesskey="3">Pular para o rodapé</a>
 
   <header id="topo">
     <div class="topo">
       <p class="logo">Acesso para Todos</p>
       <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
-        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
-        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="aumentar" aria-label="A+ (aumentar tamanho da fonte)">A+</button>
+        <button type="button" id="diminuir" aria-label="A- (diminuir tamanho da fonte)">A-</button>
         <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
       </div>
     </div>
-    <nav aria-label="Menu principal">
+    <nav aria-label="Menu principal" id="menu">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="casa.html">Em casa</a></li>
@@ -36,7 +38,7 @@
     <h1>Acessibilidade no celular e na internet</h1>
     <p class="lead">Hoje estudamos, trabalhamos, pagamos contas e conversamos pela internet. Se sites e aplicativos não forem acessíveis, muita gente fica de fora de serviços básicos.</p>
 
-    <nav class="indice" aria-label="Neste texto">
+    <nav class="indice" id="sumario" aria-label="Neste texto">
       <p class="indice-titulo">Neste texto</p>
       <ul>
         <li><a href="#recursos">Recursos do celular e do computador</a></li>
@@ -49,7 +51,7 @@
     </nav>
 
     <figure>
-      <img src="img/internet.jpg" alt="Mulher sorrindo em uma praça, segurando um celular que mostra um texto sobre acessibilidade com letras grandes.">
+      <img src="img/internet.jpg" alt="Mulher sorrindo em uma praça, mostrando um celular com um texto sobre acessibilidade em letras grandes.">
       <figcaption>O celular tem vários recursos de acessibilidade, como fonte grande e leitor de tela.</figcaption>
     </figure>
 
@@ -71,16 +73,18 @@
         </tbody>
       </table>
     </div>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="como-ativar">Como ativar o leitor de tela</h2>
     <ul>
       <li><strong>Android:</strong> Configurações, Acessibilidade, TalkBack.</li>
       <li><strong>iPhone:</strong> Ajustes, Acessibilidade, VoiceOver.</li>
-      <li><strong>Windows:</strong> o Narrador, que abre com as teclas Ctrl + Windows + Enter. Outra opção gratuita é o NVDA.</li>
+      <li><strong>Windows:</strong> o Narrador, que abre com as teclas Ctrl + Windows + Enter. Outra opção gratuita é o NVDA (Non Visual Desktop Access).</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="wcag">As diretrizes WCAG</h2>
-    <p>O W3C, organização que define os padrões da web, criou as Diretrizes de Acessibilidade para Conteúdo Web (WCAG). Elas se organizam em quatro princípios:</p>
+    <p>O World Wide Web Consortium (W3C), organização que define os padrões da web, criou as Diretrizes de Acessibilidade para Conteúdo Web (WCAG, na sigla em inglês). Elas se organizam em quatro princípios:</p>
     <ul>
       <li><strong>Perceptível:</strong> a informação precisa poder ser percebida por todos, com texto alternativo em imagens, legendas e bom contraste.</li>
       <li><strong>Operável:</strong> tudo precisa funcionar com teclado e sem limite de tempo injusto.</li>
@@ -91,6 +95,7 @@
     <aside class="destaque">
       <p><strong>É lei:</strong> a Lei Brasileira de Inclusão determina que sites de empresas com sede ou representação comercial no Brasil, e de órgãos do governo, sejam acessíveis para pessoas com deficiência.</p>
     </aside>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="boas-praticas">Boas práticas para quem cria conteúdo</h2>
     <ul>
@@ -102,15 +107,18 @@
       <li>Coloque <strong>legendas</strong> em vídeos e <strong>transcrição</strong> em áudios.</li>
       <li>Use <strong>linguagem simples</strong>, frases curtas e explique siglas.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="redes-sociais">Redes sociais</h2>
     <p>Nas redes sociais, descreva as imagens que você publica. A maioria das plataformas tem campo para texto alternativo, e muita gente usa as hashtags #PraCegoVer e #PraTodosVerem junto com uma descrição. Escreva também as hashtags com as palavras juntas e com a primeira letra de cada palavra em maiúscula, para o leitor de tela ler corretamente.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="teste">Teste você mesmo</h2>
     <p>Tente navegar neste site usando só o teclado. A tecla Tab avança para o próximo link ou botão, Shift + Tab volta, e Enter abre o link selecionado. Você vai ver que cada item fica destacado na tela quando está selecionado.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
   </main>
 
-  <footer>
+  <footer id="rodape">
     <p><a href="#topo">Voltar ao topo</a></p>
     <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
   </footer>

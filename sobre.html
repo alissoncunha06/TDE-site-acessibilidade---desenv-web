@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="pular" href="#conteudo" accesskey="1">Pular para o conteúdo</a>
+  <a class="pular" href="#menu" accesskey="2">Pular para o menu</a>
+  <a class="pular" href="#rodape" accesskey="3">Pular para o rodapé</a>
 
   <header id="topo">
     <div class="topo">
       <p class="logo">Acesso para Todos</p>
       <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
-        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
-        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="aumentar" aria-label="A+ (aumentar tamanho da fonte)">A+</button>
+        <button type="button" id="diminuir" aria-label="A- (diminuir tamanho da fonte)">A-</button>
         <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
       </div>
     </div>
-    <nav aria-label="Menu principal">
+    <nav aria-label="Menu principal" id="menu">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="casa.html">Em casa</a></li>
@@ -36,7 +38,7 @@
     <h1>Sobre o Acesso para Todos</h1>
     <p class="lead">O Acesso para Todos é um site de informação sobre acessibilidade na vida cotidiana. O objetivo é explicar o assunto em linguagem simples e mostrar exemplos reais de casa, da rua, da escola, do trabalho e da internet.</p>
 
-    <nav class="indice" aria-label="Neste texto">
+    <nav class="indice" id="sumario" aria-label="Neste texto">
       <p class="indice-titulo">Neste texto</p>
       <ul>
         <li><a href="#recursos-do-site">Recursos de acessibilidade deste site</a></li>
@@ -51,13 +53,15 @@
     <ul>
       <li><strong>Aumentar e diminuir a fonte:</strong> botões A+ e A- no topo da página. A escolha fica salva nas outras páginas.</li>
       <li><strong>Alto contraste:</strong> botão no topo da página, que muda as cores para fundo preto e letras amarelas e brancas.</li>
-      <li><strong>VLibras:</strong> botão azul no canto da tela. Selecione um texto e o avatar traduz para Libras.</li>
-      <li><strong>Link para pular o menu:</strong> aparece ao apertar Tab na primeira vez, e leva direto ao conteúdo.</li>
+      <li><strong>VLibras:</strong> botão azul no canto da tela. Selecione um texto e o avatar traduz para a Língua Brasileira de Sinais (Libras).</li>
+      <li><strong>Links para pular blocos:</strong> aparecem ao apertar Tab e levam direto ao conteúdo, ao menu ou ao rodapé.</li>
+      <li><strong>Link "Voltar ao sumário"</strong> no fim de cada seção, para voltar ao índice da página.</li>
       <li><strong>Índice em cada página,</strong> com links para as seções do texto.</li>
       <li><strong>Descrição nas imagens,</strong> lida pelos leitores de tela.</li>
       <li><strong>Estrutura organizada,</strong> com menu, conteúdo principal e rodapé, e títulos em ordem.</li>
       <li><strong>Layout adaptável</strong> para celular, tablet e computador.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="teclado">Atalhos de teclado</h2>
     <div class="tabela" role="region" aria-label="Tabela de teclas para navegar" tabindex="0">
@@ -67,6 +71,7 @@
           <tr><th scope="col">Tecla</th><th scope="col">O que faz</th></tr>
         </thead>
         <tbody>
+          <tr><th scope="row">Alt + 1, Alt + 2 e Alt + 3</th><td>Vão direto ao conteúdo, ao menu e ao rodapé. No Firefox, use Alt + Shift no lugar de Alt.</td></tr>
           <tr><th scope="row">Tab</th><td>Vai para o próximo link ou botão.</td></tr>
           <tr><th scope="row">Shift + Tab</th><td>Volta para o item anterior.</td></tr>
           <tr><th scope="row">Enter</th><td>Abre o link selecionado.</td></tr>
@@ -75,24 +80,29 @@
         </tbody>
       </table>
     </div>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="declaracao">Declaração de acessibilidade</h2>
-    <p>Este site foi desenvolvido seguindo as recomendações das Diretrizes de Acessibilidade para Conteúdo Web (WCAG), com o nível AA como meta. Estamos sempre buscando melhorar. Algumas partes dependem de serviços externos, como o VLibras, que é mantido pelo governo federal.</p>
+    <p>Este site foi desenvolvido seguindo as recomendações das Diretrizes de Acessibilidade para Conteúdo Web (WCAG) e do Modelo de Acessibilidade em Governo Eletrônico (eMAG), com o nível AA como meta. Estamos sempre buscando melhorar. Algumas partes dependem de serviços externos, como o VLibras, que é mantido pelo governo federal.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="fontes">Fontes e referências</h2>
     <ul>
       <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Lei nº 13.146/2015 &ndash; Lei Brasileira de Inclusão da Pessoa com Deficiência (Planalto)</a></li>
-      <li><a href="https://biblioteca.ibge.gov.br/visualizacao/livros/liv102178.pdf">IBGE &ndash; Censo 2022: pessoas com deficiência e pessoas diagnosticadas com transtorno do espectro autista</a></li>
-      <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C &ndash; Diretrizes de Acessibilidade para Conteúdo Web (WCAG)</a></li>
-      <li><a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usabilidade/vlibras">Governo Federal &ndash; VLibras</a></li>
-      <li>ABNT NBR 9050 &ndash; Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos.</li>
+      <li><a href="https://biblioteca.ibge.gov.br/visualizacao/livros/liv102178.pdf">Instituto Brasileiro de Geografia e Estatística (IBGE) &ndash; Censo 2022: pessoas com deficiência e pessoas diagnosticadas com transtorno do espectro autista</a></li>
+      <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">World Wide Web Consortium (W3C) &ndash; Diretrizes de Acessibilidade para Conteúdo Web (WCAG)</a></li>
+      <li><a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario">Governo Federal &ndash; Acessibilidade digital e Modelo de Acessibilidade em Governo Eletrônico (eMAG)</a></li>
+      <li><a href="https://www.gov.br/governodigital/pt-br/vlibras">Governo Federal &ndash; VLibras</a></li>
+      <li>Associação Brasileira de Normas Técnicas (ABNT) &ndash; NBR 9050: Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="creditos">Créditos</h2>
     <p>As imagens deste site são ilustrativas e foram geradas com inteligência artificial.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
   </main>
 
-  <footer>
+  <footer id="rodape">
     <p><a href="#topo">Voltar ao topo</a></p>
     <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
   </footer>

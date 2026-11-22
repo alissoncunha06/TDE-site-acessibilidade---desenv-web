@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="pular" href="#conteudo" accesskey="1">Pular para o conteúdo</a>
+  <a class="pular" href="#menu" accesskey="2">Pular para o menu</a>
+  <a class="pular" href="#rodape" accesskey="3">Pular para o rodapé</a>
 
   <header id="topo">
     <div class="topo">
       <p class="logo">Acesso para Todos</p>
       <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
-        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
-        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="aumentar" aria-label="A+ (aumentar tamanho da fonte)">A+</button>
+        <button type="button" id="diminuir" aria-label="A- (diminuir tamanho da fonte)">A-</button>
         <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
       </div>
     </div>
-    <nav aria-label="Menu principal">
+    <nav aria-label="Menu principal" id="menu">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="casa.html">Em casa</a></li>
@@ -36,7 +38,7 @@
     <h1>Direitos e leis de acessibilidade</h1>
     <p class="lead">A acessibilidade está na Constituição e em várias leis brasileiras. Conhecer esses direitos ajuda a exigir que eles sejam cumpridos.</p>
 
-    <nav class="indice" aria-label="Neste texto">
+    <nav class="indice" id="sumario" aria-label="Neste texto">
       <p class="indice-titulo">Neste texto</p>
       <ul>
         <li><a href="#lbi">Lei Brasileira de Inclusão</a></li>
@@ -48,8 +50,9 @@
     </nav>
 
     <h2 id="lbi">Lei Brasileira de Inclusão</h2>
-    <p>A Lei nº 13.146/2015, chamada de Lei Brasileira de Inclusão da Pessoa com Deficiência ou Estatuto da Pessoa com Deficiência, é a principal lei do tema. Ela se baseia na Convenção sobre os Direitos das Pessoas com Deficiência da ONU, que no Brasil tem o mesmo valor de uma emenda à Constituição.</p>
+    <p>A Lei nº 13.146/2015, chamada de Lei Brasileira de Inclusão da Pessoa com Deficiência ou Estatuto da Pessoa com Deficiência, é a principal lei do tema. Ela se baseia na Convenção sobre os Direitos das Pessoas com Deficiência da Organização das Nações Unidas (ONU), que no Brasil tem o mesmo valor de uma emenda à Constituição.</p>
     <p>A lei garante direitos em áreas como saúde, educação, trabalho, moradia, transporte, cultura, lazer e acesso à informação, e estabelece que a pessoa com deficiência não pode sofrer discriminação.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="principais-leis">Principais leis</h2>
     <div class="tabela" role="region" aria-label="Tabela das principais leis" tabindex="0">
@@ -67,10 +70,11 @@
           <tr><th scope="row">Lei nº 11.126/2005</th><td>Direito de entrar e permanecer com cão-guia em locais de uso coletivo.</td></tr>
           <tr><th scope="row">Lei nº 12.764/2012</th><td>Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista.</td></tr>
           <tr><th scope="row">Lei nº 14.126/2021</th><td>Classifica a visão monocular como deficiência sensorial.</td></tr>
-          <tr><th scope="row">ABNT NBR 9050</th><td>Norma técnica com medidas e regras de acessibilidade para edificações, mobiliário, espaços e equipamentos urbanos.</td></tr>
+          <tr><th scope="row">NBR 9050 (ABNT)</th><td>Norma técnica da Associação Brasileira de Normas Técnicas (ABNT), com medidas e regras de acessibilidade para edificações, mobiliário, espaços e equipamentos urbanos.</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="beneficios">Alguns direitos no dia a dia</h2>
     <ul>
@@ -84,6 +88,7 @@
     <aside class="destaque">
       <p><strong>Atenção:</strong> as regras de cada benefício e direito têm requisitos e podem mudar. Para uma orientação sobre o seu caso, procure um órgão público ou um profissional.</p>
     </aside>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="onde-buscar-ajuda">Onde buscar ajuda</h2>
     <p>Se um direito não for respeitado, existem canais para denunciar e pedir ajuda:</p>
@@ -91,8 +96,9 @@
       <li><strong>Disque 100:</strong> canal do governo federal para denúncias de violações de direitos humanos, que inclui pessoas com deficiência.</li>
       <li><strong>Ministério Público</strong> do seu estado, que fiscaliza o cumprimento das leis.</li>
       <li><strong>Defensoria Pública,</strong> que oferece orientação jurídica gratuita a quem não pode pagar um advogado.</li>
-      <li><strong>Procon,</strong> para problemas com produtos e serviços, como um estabelecimento que se recusa a atender.</li>
+      <li><strong>Procon</strong> (órgão de defesa do consumidor), para problemas com produtos e serviços, como um estabelecimento que se recusa a atender.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="datas">Datas importantes</h2>
     <ul>
@@ -100,9 +106,10 @@
       <li><strong>3 de dezembro:</strong> Dia Internacional das Pessoas com Deficiência.</li>
       <li><strong>24 de abril:</strong> Dia Nacional da Língua Brasileira de Sinais (Libras).</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
   </main>
 
-  <footer>
+  <footer id="rodape">
     <p><a href="#topo">Voltar ao topo</a></p>
     <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
   </footer>

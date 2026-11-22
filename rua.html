@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="pular" href="#conteudo" accesskey="1">Pular para o conteúdo</a>
+  <a class="pular" href="#menu" accesskey="2">Pular para o menu</a>
+  <a class="pular" href="#rodape" accesskey="3">Pular para o rodapé</a>
 
   <header id="topo">
     <div class="topo">
       <p class="logo">Acesso para Todos</p>
       <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
-        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
-        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="aumentar" aria-label="A+ (aumentar tamanho da fonte)">A+</button>
+        <button type="button" id="diminuir" aria-label="A- (diminuir tamanho da fonte)">A-</button>
         <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
       </div>
     </div>
-    <nav aria-label="Menu principal">
+    <nav aria-label="Menu principal" id="menu">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="casa.html">Em casa</a></li>
@@ -36,7 +38,7 @@
     <h1>Acessibilidade na rua e no transporte</h1>
     <p class="lead">Sair de casa, ir ao trabalho, à escola ou ao médico depende de calçadas, travessias e transportes que todos consigam usar. Quando a cidade tem barreiras, muita gente perde o direito de ir e vir.</p>
 
-    <nav class="indice" aria-label="Neste texto">
+    <nav class="indice" id="sumario" aria-label="Neste texto">
       <p class="indice-titulo">Neste texto</p>
       <ul>
         <li><a href="#calcadas">Calçadas e travessias</a></li>
@@ -49,18 +51,19 @@
     </nav>
 
     <figure>
-      <img src="img/rua.jpg" alt="Esquina com piso tátil amarelo e rampa de acesso. Uma mulher em cadeira de rodas atravessa a rua, e uma família com carrinho de bebê caminha pela calçada.">
+      <img src="img/rua.jpg" alt="Esquina com piso tátil amarelo e rampa de acesso. Uma mulher em cadeira de rodas atravessa a rua.">
       <figcaption>Esquina com piso tátil, rampa de acesso e faixa de pedestres.</figcaption>
     </figure>
 
     <h2 id="calcadas">Calçadas e travessias</h2>
     <ul>
-      <li><strong>Faixa livre:</strong> a calçada precisa ter um caminho sem obstáculos, como postes, lixeiras, plantas e mesas de bar. A NBR 9050 indica largura mínima de 1,20 m para essa faixa.</li>
+      <li><strong>Faixa livre:</strong> a calçada precisa ter um caminho sem obstáculos, como postes, lixeiras, plantas e mesas de bar. A NBR 9050, norma da Associação Brasileira de Normas Técnicas (ABNT), indica largura mínima de 1,20 m para essa faixa.</li>
       <li><strong>Superfície firme e regular:</strong> buracos e pisos soltos causam quedas e travam cadeiras de rodas e carrinhos.</li>
       <li><strong>Rampas nas esquinas</strong> (rebaixamento da calçada) ligam a calçada à rua e ajudam cadeirantes, idosos, carrinhos de bebê e carrinhos de compras.</li>
       <li><strong>Travessias elevadas</strong> e faixas de pedestres bem pintadas deixam a travessia mais segura.</li>
       <li><strong>Semáforo sonoro</strong> avisa por som quando é seguro atravessar, e é essencial para pessoas cegas ou com baixa visão.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="piso-tatil">Piso tátil</h2>
     <p>O piso tátil é o piso com relevo, geralmente amarelo, que aparece em calçadas, estações e prédios públicos. Ele orienta pessoas cegas ou com baixa visão, que sentem o relevo com os pés e com a bengala. Existem dois tipos:</p>
@@ -71,6 +74,7 @@
     <aside class="destaque">
       <p><strong>Atenção:</strong> carros, motos, bicicletas, lixeiras e placas em cima do piso tátil ou da rampa bloqueiam o caminho de quem precisa. Deixe esses espaços livres.</p>
     </aside>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="transporte">Transporte público</h2>
     <ul>
@@ -80,12 +84,15 @@
       <li><strong>Assentos preferenciais</strong> para pessoas idosas, gestantes, pessoas com deficiência e pessoas com criança de colo.</li>
       <li><strong>Atendimento prioritário</strong> em filas, bancos, terminais e outros serviços, garantido por lei.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="vagas">Vagas reservadas</h2>
     <p>A lei determina que estacionamentos abertos ao público reservem vagas para pessoas com deficiência e para pessoas idosas, perto das entradas e com sinalização. As vagas para pessoas com deficiência são mais largas para permitir a abertura total da porta e o uso da cadeira de rodas. Usar essas vagas sem necessidade tira a autonomia de quem depende delas.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="cao-guia">Cão-guia</h2>
     <p>Pessoas cegas ou com baixa visão podem ser acompanhadas por um cão-guia. A Lei nº 11.126/2005 garante o direito de entrar e permanecer com o cão em locais públicos e privados de uso coletivo, como ônibus, lojas, restaurantes e hospitais.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="como-ajudar">Como ajudar com respeito</h2>
     <ul>
@@ -95,9 +102,10 @@
       <li>Ao guiar uma pessoa cega, ofereça o braço e descreva o caminho.</li>
       <li>Não estacione na calçada, na rampa ou na faixa de pedestres.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
   </main>
 
-  <footer>
+  <footer id="rodape">
     <p><a href="#topo">Voltar ao topo</a></p>
     <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
   </footer>

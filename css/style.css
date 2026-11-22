@@ -78,10 +78,12 @@ header {
 }
 
 .ferramentas {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
+.js .ferramentas { display: flex; }
 
 .ferramentas button {
   font-size: 1rem;
@@ -99,6 +101,11 @@ header {
   background: #000;
   color: #ffeb3b;
   border-color: #ffeb3b;
+}
+
+.ferramentas button[aria-pressed="true"]::before {
+  content: "\2713 ";
+  content: "\2713 " / "";
 }
 
 nav[aria-label="Menu principal"] { background: #082a66; }
@@ -208,6 +215,11 @@ figcaption {
   border-radius: 8px;
   padding: 0.75rem 1.25rem;
   margin: 1.5rem 0;
+}
+
+.voltar {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
 }
 
 .indice-titulo {
@@ -346,7 +358,6 @@ body.alto-contraste footer a:focus-visible { outline-color: #00e5ff; }
   h2 { font-size: 1.3rem; }
   .lead { font-size: 1.1rem; }
   .hero { padding: 1rem 1rem 0.5rem; border-left-width: 6px; }
-  nav[aria-label="Menu principal"] ul { flex-direction: column; }
-  nav[aria-label="Menu principal"] a { padding: 0.75rem 1rem; }
+  nav[aria-label="Menu principal"] a { padding: 0.6rem 0.75rem; }
   table { min-width: 28rem; }
 }

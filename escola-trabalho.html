@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="pular" href="#conteudo" accesskey="1">Pular para o conteúdo</a>
+  <a class="pular" href="#menu" accesskey="2">Pular para o menu</a>
+  <a class="pular" href="#rodape" accesskey="3">Pular para o rodapé</a>
 
   <header id="topo">
     <div class="topo">
       <p class="logo">Acesso para Todos</p>
       <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
-        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
-        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="aumentar" aria-label="A+ (aumentar tamanho da fonte)">A+</button>
+        <button type="button" id="diminuir" aria-label="A- (diminuir tamanho da fonte)">A-</button>
         <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
       </div>
     </div>
-    <nav aria-label="Menu principal">
+    <nav aria-label="Menu principal" id="menu">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="casa.html">Em casa</a></li>
@@ -36,7 +38,7 @@
     <h1>Acessibilidade na escola e no trabalho</h1>
     <p class="lead">Estudar e trabalhar são direitos de todas as pessoas. Para isso acontecer, escolas e empresas precisam remover barreiras físicas, de comunicação e de atitude.</p>
 
-    <nav class="indice" aria-label="Neste texto">
+    <nav class="indice" id="sumario" aria-label="Neste texto">
       <p class="indice-titulo">Neste texto</p>
       <ul>
         <li><a href="#educacao">Educação inclusiva</a></li>
@@ -47,19 +49,20 @@
     </nav>
 
     <figure>
-      <img src="img/escola.jpg" alt="Sala de aula com estudantes sentados em carteiras. Uma estudante em cadeira de rodas usa uma mesa adaptada e, à direita, uma professora ou intérprete usa Libras diante do quadro.">
-      <figcaption>Sala de aula inclusiva, com mesa adaptada e comunicação em Libras.</figcaption>
+      <img src="img/escola.jpg" alt="Sala de aula com uma estudante em cadeira de rodas em mesa adaptada e uma mulher usando Libras perto do quadro.">
+      <figcaption>Sala de aula inclusiva, com mesa adaptada e comunicação em Língua Brasileira de Sinais (Libras).</figcaption>
     </figure>
 
     <h2 id="educacao">Educação inclusiva</h2>
     <p>A Lei Brasileira de Inclusão garante um sistema educacional inclusivo em todos os níveis, com o objetivo de que cada estudante desenvolva seus talentos e habilidades. As escolas particulares também são obrigadas a incluir, e não podem cobrar valor extra nas mensalidades por causa da deficiência.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="recursos-escolares">Recursos que fazem diferença</h2>
     <ul>
       <li><strong>Intérprete de Libras</strong> e materiais em Libras para estudantes surdos.</li>
       <li><strong>Braille, textos ampliados e áudio</strong> para estudantes cegos ou com baixa visão.</li>
       <li><strong>Legendas e transcrições</strong> em vídeos e aulas gravadas.</li>
-      <li><strong>Tecnologia assistiva:</strong> leitores de tela, softwares de ampliação, teclados e mouses adaptados.</li>
+      <li><strong>Tecnologia assistiva</strong> (recursos que dão mais autonomia à pessoa), como leitores de tela, softwares de ampliação, teclados e mouses adaptados.</li>
       <li><strong>Atendimento Educacional Especializado (AEE),</strong> que complementa o ensino com apoio específico, no contraturno.</li>
       <li><strong>Tempo adicional e provas adaptadas,</strong> quando a pessoa precisa.</li>
       <li><strong>Espaços acessíveis:</strong> rampas, elevadores, banheiros adaptados e carteiras que servem para todos.</li>
@@ -67,12 +70,13 @@
     <aside class="destaque">
       <p><strong>A inclusão beneficia todos.</strong> Estudantes que convivem com a diferença aprendem a respeitar, a colaborar e a resolver problemas de formas variadas.</p>
     </aside>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="trabalho">No mundo do trabalho</h2>
-    <p>Segundo o IBGE, em 2022 apenas cerca de 29% das pessoas com deficiência estavam ocupadas no Brasil, bem menos que a população em geral. Entre os motivos estão as barreiras de acesso, a falta de adaptação nas empresas e o preconceito.</p>
+    <p>Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), em 2022 apenas cerca de 29% das pessoas com deficiência estavam ocupadas no Brasil, bem menos que a população em geral. Entre os motivos estão as barreiras de acesso, a falta de adaptação nas empresas e o preconceito.</p>
 
     <h3>Lei de Cotas</h3>
-    <p>A Lei nº 8.213/1991 obriga empresas com 100 ou mais empregados a contratar pessoas com deficiência ou reabilitadas pelo INSS:</p>
+    <p>A Lei nº 8.213/1991 obriga empresas com 100 ou mais empregados a contratar pessoas com deficiência ou reabilitadas pelo Instituto Nacional do Seguro Social (INSS):</p>
     <div class="tabela" role="region" aria-label="Tabela da Lei de Cotas" tabindex="0">
       <table>
         <caption>Percentual de vagas reservadas por tamanho da empresa</caption>
@@ -98,6 +102,7 @@
       <li>horário flexível ou trabalho remoto, quando ajudam;</li>
       <li>rotas de saída e alarmes de emergência acessíveis.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
 
     <h2 id="atitude">Atitude também é acessibilidade</h2>
     <p>As barreiras atitudinais, como o preconceito e o capacitismo, costumam ser as mais difíceis de remover. Capacitismo é tratar a pessoa com deficiência como menos capaz, incapaz ou digna de pena.</p>
@@ -107,9 +112,10 @@
       <li>Pergunte à pessoa do que ela precisa, em vez de decidir por ela.</li>
       <li>Foque nas habilidades e no que a pessoa pode fazer.</li>
     </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
   </main>
 
-  <footer>
+  <footer id="rodape">
     <p><a href="#topo">Voltar ao topo</a></p>
     <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
   </footer>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acessibilidade digital: recursos do celular e do computador, leitor de tela, legendas, VLibras, diretrizes WCAG e boas práticas para sites e redes sociais.">
+  <title>Acessibilidade no celular e na internet | Acesso para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header id="topo">
+    <div class="topo">
+      <p class="logo">Acesso para Todos</p>
+      <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
+        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="casa.html">Em casa</a></li>
+        <li><a href="rua.html">Na rua</a></li>
+        <li><a href="escola-trabalho.html">Escola e trabalho</a></li>
+        <li><a href="internet.html" aria-current="page">Internet</a></li>
+        <li><a href="direitos.html">Direitos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <h1>Acessibilidade no celular e na internet</h1>
+    <p class="lead">Hoje estudamos, trabalhamos, pagamos contas e conversamos pela internet. Se sites e aplicativos não forem acessíveis, muita gente fica de fora de serviços básicos.</p>
+
+    <nav class="indice" aria-label="Neste texto">
+      <p class="indice-titulo">Neste texto</p>
+      <ul>
+        <li><a href="#recursos">Recursos do celular e do computador</a></li>
+        <li><a href="#como-ativar">Como ativar o leitor de tela</a></li>
+        <li><a href="#wcag">As diretrizes WCAG</a></li>
+        <li><a href="#boas-praticas">Boas práticas para quem cria conteúdo</a></li>
+        <li><a href="#redes-sociais">Redes sociais</a></li>
+        <li><a href="#teste">Teste você mesmo</a></li>
+      </ul>
+    </nav>
+
+    <figure>
+      <img src="img/internet.jpg" alt="Mulher sorrindo em uma praça, segurando um celular que mostra um texto sobre acessibilidade com letras grandes.">
+      <figcaption>O celular tem vários recursos de acessibilidade, como fonte grande e leitor de tela.</figcaption>
+    </figure>
+
+    <h2 id="recursos">Recursos que já vêm no celular e no computador</h2>
+    <div class="tabela" role="region" aria-label="Tabela de recursos de acessibilidade digital" tabindex="0">
+      <table>
+        <caption>Principais recursos de acessibilidade digital</caption>
+        <thead>
+          <tr><th scope="col">Recurso</th><th scope="col">Para que serve</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Leitor de tela</th><td>Lê em voz alta o que aparece na tela e permite usar o aparelho sem ver. Ajuda pessoas cegas ou com baixa visão.</td></tr>
+          <tr><th scope="row">Legendas</th><td>Mostram por escrito o que é falado em vídeos. Ajudam pessoas surdas e quem assiste sem som.</td></tr>
+          <tr><th scope="row">Aumentar fonte e zoom</th><td>Deixam textos e botões maiores e mais fáceis de ler e tocar.</td></tr>
+          <tr><th scope="row">Alto contraste e modo escuro</th><td>Aumentam a diferença entre letra e fundo. Ajudam quem tem baixa visão ou sensibilidade à luz.</td></tr>
+          <tr><th scope="row">Comando de voz</th><td>Permite controlar o aparelho e escrever falando. Ajuda quem tem dificuldade de usar as mãos.</td></tr>
+          <tr><th scope="row">Teclado e mouse adaptados</th><td>Permitem usar o computador sem mouse ou com movimentos limitados.</td></tr>
+          <tr><th scope="row">VLibras</th><td>Traduz textos de sites para a Língua Brasileira de Sinais (Libras), usando um avatar em 3D.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="como-ativar">Como ativar o leitor de tela</h2>
+    <ul>
+      <li><strong>Android:</strong> Configurações, Acessibilidade, TalkBack.</li>
+      <li><strong>iPhone:</strong> Ajustes, Acessibilidade, VoiceOver.</li>
+      <li><strong>Windows:</strong> o Narrador, que abre com as teclas Ctrl + Windows + Enter. Outra opção gratuita é o NVDA.</li>
+    </ul>
+
+    <h2 id="wcag">As diretrizes WCAG</h2>
+    <p>O W3C, organização que define os padrões da web, criou as Diretrizes de Acessibilidade para Conteúdo Web (WCAG). Elas se organizam em quatro princípios:</p>
+    <ul>
+      <li><strong>Perceptível:</strong> a informação precisa poder ser percebida por todos, com texto alternativo em imagens, legendas e bom contraste.</li>
+      <li><strong>Operável:</strong> tudo precisa funcionar com teclado e sem limite de tempo injusto.</li>
+      <li><strong>Compreensível:</strong> o texto e a navegação precisam ser claros e previsíveis.</li>
+      <li><strong>Robusto:</strong> o conteúdo precisa funcionar em diferentes navegadores e tecnologias assistivas.</li>
+    </ul>
+    <p>As diretrizes têm três níveis de conformidade: A, AA e AAA. O nível AA é o mais usado como meta. Nele, por exemplo, textos comuns precisam ter contraste mínimo de 4,5 para 1 em relação ao fundo.</p>
+    <aside class="destaque">
+      <p><strong>É lei:</strong> a Lei Brasileira de Inclusão determina que sites de empresas com sede ou representação comercial no Brasil, e de órgãos do governo, sejam acessíveis para pessoas com deficiência.</p>
+    </aside>
+
+    <h2 id="boas-praticas">Boas práticas para quem cria conteúdo</h2>
+    <ul>
+      <li>Coloque <strong>texto alternativo</strong> em imagens, descrevendo o que importa na foto.</li>
+      <li>Use <strong>títulos e listas</strong> na ordem correta, para organizar o texto.</li>
+      <li>Escreva <strong>links claros</strong>, como &ldquo;Leia sobre transporte público&rdquo;, e não &ldquo;clique aqui&rdquo;.</li>
+      <li>Garanta <strong>contraste forte</strong> entre texto e fundo, e não use só a cor para passar uma informação.</li>
+      <li>Permita <strong>navegar só com o teclado</strong>, com o item selecionado sempre visível.</li>
+      <li>Coloque <strong>legendas</strong> em vídeos e <strong>transcrição</strong> em áudios.</li>
+      <li>Use <strong>linguagem simples</strong>, frases curtas e explique siglas.</li>
+    </ul>
+
+    <h2 id="redes-sociais">Redes sociais</h2>
+    <p>Nas redes sociais, descreva as imagens que você publica. A maioria das plataformas tem campo para texto alternativo, e muita gente usa as hashtags #PraCegoVer e #PraTodosVerem junto com uma descrição. Escreva também as hashtags com as palavras juntas e com a primeira letra de cada palavra em maiúscula, para o leitor de tela ler corretamente.</p>
+
+    <h2 id="teste">Teste você mesmo</h2>
+    <p>Tente navegar neste site usando só o teclado. A tecla Tab avança para o próximo link ou botão, Shift + Tab volta, e Enter abre o link selecionado. Você vai ver que cada item fica destacado na tela quando está selecionado.</p>
+  </main>
+
+  <footer>
+    <p><a href="#topo">Voltar ao topo</a></p>
+    <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <script src="js/acessibilidade.js"></script>
+</body>
+</html>

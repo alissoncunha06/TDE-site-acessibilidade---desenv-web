@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia sobre acessibilidade no dia a dia: o que é, quem se beneficia, tipos de barreira e como tornar casa, rua, escola, trabalho e internet mais acessíveis.">
+  <title>Acesso para Todos | Acessibilidade no dia a dia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header id="topo">
+    <div class="topo">
+      <p class="logo">Acesso para Todos</p>
+      <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
+        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="casa.html">Em casa</a></li>
+        <li><a href="rua.html">Na rua</a></li>
+        <li><a href="escola-trabalho.html">Escola e trabalho</a></li>
+        <li><a href="internet.html">Internet</a></li>
+        <li><a href="direitos.html">Direitos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <h1 id="titulo-principal">Acessibilidade é o que permite que todos participem</h1>
+      <p class="lead">Entrar em casa, atravessar a rua, estudar, trabalhar, usar o celular. Para muita gente, cada uma dessas tarefas depende de um ambiente pensado para todos. Este guia explica o que é acessibilidade e mostra como ela aparece na vida de todo dia.</p>
+    </section>
+
+    <nav class="indice" aria-label="Neste texto">
+      <p class="indice-titulo">Neste texto</p>
+      <ul>
+        <li><a href="#o-que-e">O que é acessibilidade</a></li>
+        <li><a href="#quem-se-beneficia">Quem se beneficia</a></li>
+        <li><a href="#barreiras">Os tipos de barreira</a></li>
+        <li><a href="#desenho-universal">Desenho universal</a></li>
+        <li><a href="#explore">Explore o guia</a></li>
+      </ul>
+    </nav>
+
+    <figure>
+      <img src="img/inicio.jpg" alt="Três mulheres em uma praça arborizada: uma empurra um carrinho de bebê, outra é uma pessoa idosa com bengala e outra usa cadeira de rodas. Elas conversam e sorriem.">
+      <figcaption>Espaços acessíveis são usados por todas as pessoas, de todas as idades.</figcaption>
+    </figure>
+
+    <h2>Acessibilidade em números</h2>
+    <p>Segundo o Censo 2022 do IBGE, o Brasil tinha mais de 14 milhões de pessoas com deficiência entre quem tem 2 anos ou mais.</p>
+    <ul class="numeros">
+      <li><strong>14,4 milhões</strong><span>de pessoas com deficiência no Brasil (7,3% da população)</span></li>
+      <li><strong>7,9 milhões</strong><span>com dificuldade permanente de enxergar, mesmo usando óculos ou lentes</span></li>
+      <li><strong>45,4%</strong><span>das pessoas com deficiência tinham 60 anos ou mais</span></li>
+    </ul>
+
+    <h2 id="o-que-e">O que é acessibilidade</h2>
+    <p>Acessibilidade é a possibilidade de uma pessoa usar espaços, produtos, serviços, informações e tecnologias com segurança e autonomia. A Lei Brasileira de Inclusão (Lei nº 13.146/2015) trata a acessibilidade como um direito, e não como um favor.</p>
+    <p>Quando um lugar não é acessível, quem sofre não é a pessoa que tem a deficiência, e sim quem encontra uma barreira no caminho: um degrau sem rampa, um vídeo sem legenda, um site que o leitor de tela não consegue ler.</p>
+
+    <h2 id="quem-se-beneficia">Quem se beneficia</h2>
+    <p>Acessibilidade ajuda pessoas com deficiência, mas não só elas. Também se beneficiam:</p>
+    <ul>
+      <li>pessoas idosas, que podem ter dificuldade para andar, enxergar ou ouvir;</li>
+      <li>gestantes e pessoas que empurram carrinhos de bebê;</li>
+      <li>quem está com o braço ou a perna engessados, ou se recuperando de uma cirurgia;</li>
+      <li>pessoas com mobilidade reduzida por qualquer motivo, como quem carrega malas ou compras pesadas;</li>
+      <li>quem está em um ambiente barulhento, escuro ou com muito reflexo na tela.</li>
+    </ul>
+    <aside class="destaque">
+      <p><strong>Você sabia?</strong> As legendas em vídeos foram criadas para pessoas surdas, mas hoje são muito usadas por quem assiste sem som, no ônibus ou no trabalho. Uma solução pensada para poucos acaba servindo a muitos.</p>
+    </aside>
+
+    <h2 id="barreiras">Os tipos de barreira</h2>
+    <p>A Lei Brasileira de Inclusão define barreira como qualquer obstáculo que limita a participação de uma pessoa na sociedade. Ela separa as barreiras em seis tipos:</p>
+    <ul>
+      <li><strong>Urbanísticas:</strong> calçadas quebradas, falta de rampas e de piso tátil nas vias públicas.</li>
+      <li><strong>Arquitetônicas:</strong> degraus, portas estreitas e banheiros sem adaptação em prédios.</li>
+      <li><strong>Nos transportes:</strong> ônibus sem elevador, estações sem acesso para cadeira de rodas.</li>
+      <li><strong>Na comunicação e na informação:</strong> falta de Libras, braille, legendas e linguagem simples.</li>
+      <li><strong>Atitudinais:</strong> preconceito e comportamentos que excluem, como tratar a pessoa como incapaz.</li>
+      <li><strong>Tecnológicas:</strong> sites, aplicativos e equipamentos que nem todos conseguem usar.</li>
+    </ul>
+
+    <h2 id="desenho-universal">Desenho universal</h2>
+    <p>O desenho universal é a ideia de criar ambientes, objetos e serviços que possam ser usados por todas as pessoas, sem precisar de adaptação depois. Ele é mais barato do que reformar mais tarde e evita que alguém seja tratado como exceção.</p>
+    <p>Os sete princípios do desenho universal são:</p>
+    <ol>
+      <li>Uso equitativo: serve a pessoas com habilidades diferentes.</li>
+      <li>Flexibilidade de uso: aceita várias preferências e formas de usar.</li>
+      <li>Uso simples e intuitivo: fácil de entender, mesmo para quem usa pela primeira vez.</li>
+      <li>Informação perceptível: a informação chega por mais de um meio, como texto, som e imagem.</li>
+      <li>Tolerância ao erro: reduz riscos e consequências de ações acidentais.</li>
+      <li>Baixo esforço físico: pode ser usado com conforto e pouca fadiga.</li>
+      <li>Tamanho e espaço adequados para aproximação e uso, seja a pessoa alta, baixa ou use cadeira de rodas.</li>
+    </ol>
+
+    <h2 id="explore">Explore o guia</h2>
+    <ul class="cards">
+      <li><h3><a href="casa.html">Em casa</a></h3><p>Portas, banheiro, cozinha, iluminação e pequenas adaptações.</p></li>
+      <li><h3><a href="rua.html">Na rua</a></h3><p>Calçadas, piso tátil, travessias, transporte e vagas.</p></li>
+      <li><h3><a href="escola-trabalho.html">Escola e trabalho</a></h3><p>Educação inclusiva, Libras, cotas e adaptações.</p></li>
+      <li><h3><a href="internet.html">Internet</a></h3><p>Celular, leitor de tela, legendas e sites acessíveis.</p></li>
+      <li><h3><a href="direitos.html">Direitos</a></h3><p>As principais leis e onde buscar ajuda.</p></li>
+    </ul>
+
+    <p>Este site também foi construído para ser acessível. No topo de cada página você pode aumentar a letra e ativar o alto contraste, e o tradutor VLibras aparece no canto da tela.</p>
+  </main>
+
+  <footer>
+    <p><a href="#topo">Voltar ao topo</a></p>
+    <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <script src="js/acessibilidade.js"></script>
+</body>
+</html>

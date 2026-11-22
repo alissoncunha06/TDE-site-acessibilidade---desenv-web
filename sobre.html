@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre o Acesso para Todos: objetivo do site, recursos de acessibilidade disponíveis, atalhos de teclado, fontes e créditos.">
+  <title>Sobre o site e fontes | Acesso para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header id="topo">
+    <div class="topo">
+      <p class="logo">Acesso para Todos</p>
+      <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
+        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="casa.html">Em casa</a></li>
+        <li><a href="rua.html">Na rua</a></li>
+        <li><a href="escola-trabalho.html">Escola e trabalho</a></li>
+        <li><a href="internet.html">Internet</a></li>
+        <li><a href="direitos.html">Direitos</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <h1>Sobre o Acesso para Todos</h1>
+    <p class="lead">O Acesso para Todos é um site de informação sobre acessibilidade na vida cotidiana. O objetivo é explicar o assunto em linguagem simples e mostrar exemplos reais de casa, da rua, da escola, do trabalho e da internet.</p>
+
+    <nav class="indice" aria-label="Neste texto">
+      <p class="indice-titulo">Neste texto</p>
+      <ul>
+        <li><a href="#recursos-do-site">Recursos de acessibilidade deste site</a></li>
+        <li><a href="#teclado">Atalhos de teclado</a></li>
+        <li><a href="#declaracao">Declaração de acessibilidade</a></li>
+        <li><a href="#fontes">Fontes e referências</a></li>
+        <li><a href="#creditos">Créditos</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="recursos-do-site">Recursos de acessibilidade deste site</h2>
+    <ul>
+      <li><strong>Aumentar e diminuir a fonte:</strong> botões A+ e A- no topo da página. A escolha fica salva nas outras páginas.</li>
+      <li><strong>Alto contraste:</strong> botão no topo da página, que muda as cores para fundo preto e letras amarelas e brancas.</li>
+      <li><strong>VLibras:</strong> botão azul no canto da tela. Selecione um texto e o avatar traduz para Libras.</li>
+      <li><strong>Link para pular o menu:</strong> aparece ao apertar Tab na primeira vez, e leva direto ao conteúdo.</li>
+      <li><strong>Índice em cada página,</strong> com links para as seções do texto.</li>
+      <li><strong>Descrição nas imagens,</strong> lida pelos leitores de tela.</li>
+      <li><strong>Estrutura organizada,</strong> com menu, conteúdo principal e rodapé, e títulos em ordem.</li>
+      <li><strong>Layout adaptável</strong> para celular, tablet e computador.</li>
+    </ul>
+
+    <h2 id="teclado">Atalhos de teclado</h2>
+    <div class="tabela" role="region" aria-label="Tabela de teclas para navegar" tabindex="0">
+      <table>
+        <caption>Teclas para navegar sem mouse</caption>
+        <thead>
+          <tr><th scope="col">Tecla</th><th scope="col">O que faz</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Tab</th><td>Vai para o próximo link ou botão.</td></tr>
+          <tr><th scope="row">Shift + Tab</th><td>Volta para o item anterior.</td></tr>
+          <tr><th scope="row">Enter</th><td>Abre o link selecionado.</td></tr>
+          <tr><th scope="row">Espaço</th><td>Aperta o botão selecionado e rola a página para baixo.</td></tr>
+          <tr><th scope="row">Home e End</th><td>Vão para o começo e para o fim da página.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="declaracao">Declaração de acessibilidade</h2>
+    <p>Este site foi desenvolvido seguindo as recomendações das Diretrizes de Acessibilidade para Conteúdo Web (WCAG), com o nível AA como meta. Estamos sempre buscando melhorar. Algumas partes dependem de serviços externos, como o VLibras, que é mantido pelo governo federal.</p>
+
+    <h2 id="fontes">Fontes e referências</h2>
+    <ul>
+      <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Lei nº 13.146/2015 &ndash; Lei Brasileira de Inclusão da Pessoa com Deficiência (Planalto)</a></li>
+      <li><a href="https://biblioteca.ibge.gov.br/visualizacao/livros/liv102178.pdf">IBGE &ndash; Censo 2022: pessoas com deficiência e pessoas diagnosticadas com transtorno do espectro autista</a></li>
+      <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C &ndash; Diretrizes de Acessibilidade para Conteúdo Web (WCAG)</a></li>
+      <li><a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usabilidade/vlibras">Governo Federal &ndash; VLibras</a></li>
+      <li>ABNT NBR 9050 &ndash; Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos.</li>
+    </ul>
+
+    <h2 id="creditos">Créditos</h2>
+    <p>As imagens deste site são ilustrativas e foram geradas com inteligência artificial.</p>
+  </main>
+
+  <footer>
+    <p><a href="#topo">Voltar ao topo</a></p>
+    <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <script src="js/acessibilidade.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Como tornar a casa mais acessível: portas, corredores, banheiro, cozinha, iluminação, avisos e tecnologia, com adaptações simples e baratas.">
+  <title>Acessibilidade em casa | Acesso para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header id="topo">
+    <div class="topo">
+      <p class="logo">Acesso para Todos</p>
+      <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
+        <button type="button" id="aumentar" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" id="diminuir" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="casa.html" aria-current="page">Em casa</a></li>
+        <li><a href="rua.html">Na rua</a></li>
+        <li><a href="escola-trabalho.html">Escola e trabalho</a></li>
+        <li><a href="internet.html">Internet</a></li>
+        <li><a href="direitos.html">Direitos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <h1>Acessibilidade em casa</h1>
+    <p class="lead">A casa é o lugar onde passamos boa parte da vida. Um ambiente acessível dá segurança, evita acidentes e permite que cada pessoa faça suas atividades com independência, em qualquer idade.</p>
+
+    <nav class="indice" aria-label="Neste texto">
+      <p class="indice-titulo">Neste texto</p>
+      <ul>
+        <li><a href="#entrada">Entrada, portas e corredores</a></li>
+        <li><a href="#banheiro">Banheiro</a></li>
+        <li><a href="#cozinha">Cozinha e área de serviço</a></li>
+        <li><a href="#quarto-sala">Quarto e sala</a></li>
+        <li><a href="#luz-avisos">Iluminação, avisos e segurança</a></li>
+        <li><a href="#tecnologia">Tecnologia dentro de casa</a></li>
+        <li><a href="#checklist">Lista rápida</a></li>
+      </ul>
+    </nav>
+
+    <figure>
+      <img src="img/casa.jpg" alt="Banheiro adaptado com barras de apoio na parede ao lado do vaso sanitário, pia baixa e porta de correr larga.">
+      <figcaption>Banheiro com barras de apoio, espaço para circular e porta larga.</figcaption>
+    </figure>
+
+    <h2 id="entrada">Entrada, portas e corredores</h2>
+    <ul>
+      <li><strong>Entrada sem degrau:</strong> quando há desnível, uma rampa com inclinação suave resolve. A norma técnica ABNT NBR 9050 indica inclinação máxima de 8,33% para rampas.</li>
+      <li><strong>Portas largas:</strong> a NBR 9050 indica vão livre de pelo menos 80 cm, o que permite a passagem de cadeira de rodas, andador ou muletas.</li>
+      <li><strong>Maçanetas de alavanca</strong> são mais fáceis de abrir do que as redondas, principalmente para quem tem pouca força ou dificuldade nas mãos.</li>
+      <li><strong>Corredores livres</strong>, sem móveis, tapetes soltos ou fios pelo caminho, evitam tropeços.</li>
+      <li><strong>Espaço para girar:</strong> uma cadeira de rodas precisa de uma área de cerca de 1,5 m de diâmetro para dar uma volta completa.</li>
+    </ul>
+
+    <h2 id="banheiro">Banheiro</h2>
+    <p>O banheiro é o cômodo onde mais acontecem quedas dentro de casa, por causa do piso molhado e liso. Algumas adaptações importantes:</p>
+    <ul>
+      <li>barras de apoio ao lado do vaso sanitário e dentro do box;</li>
+      <li>piso antiderrapante e tapete com base de borracha;</li>
+      <li>box sem degrau, com espaço para entrar com cadeira de banho;</li>
+      <li>banco ou cadeira de banho fixa ou removível;</li>
+      <li>pia sem coluna embaixo, para quem precisa se aproximar sentado;</li>
+      <li>torneiras de alavanca e chuveiro com ducha manual.</li>
+    </ul>
+
+    <h2 id="cozinha">Cozinha e área de serviço</h2>
+    <ul>
+      <li>Bancadas e pias em altura que dê para usar sentado ou em pé.</li>
+      <li>Armários e prateleiras ao alcance, com os objetos mais usados na altura das mãos.</li>
+      <li>Fogão com acendimento automático e bocas na frente, para não precisar esticar o braço sobre o fogo.</li>
+      <li>Espaço livre na frente de geladeira, fogão e máquina de lavar.</li>
+    </ul>
+
+    <h2 id="quarto-sala">Quarto e sala</h2>
+    <ul>
+      <li>Cama em altura que permita sentar e levantar com facilidade.</li>
+      <li>Circulação livre ao redor da cama e do sofá.</li>
+      <li>Interruptores e tomadas em altura confortável, sem precisar se abaixar ou esticar.</li>
+      <li>Objetos de uso diário em lugares fixos, o que ajuda muito pessoas com baixa visão.</li>
+    </ul>
+
+    <h2 id="luz-avisos">Iluminação, avisos e segurança</h2>
+    <ul>
+      <li><strong>Boa iluminação</strong> em escadas, corredores e banheiro, com luz de vigília durante a noite.</li>
+      <li><strong>Contraste de cores:</strong> um degrau pintado com cor diferente do piso é mais fácil de ver.</li>
+      <li><strong>Campainha com luz</strong> e alarme de fumaça com sinal luminoso ajudam pessoas surdas ou com dificuldade de ouvir.</li>
+      <li><strong>Escadas</strong> com corrimão dos dois lados e fita antiderrapante nos degraus.</li>
+    </ul>
+    <aside class="destaque">
+      <p><strong>Dica:</strong> adaptar não precisa ser caro. Tapete antiderrapante, fita luminosa nos degraus, lâmpadas mais fortes e arrumação dos móveis já deixam a casa bem mais segura.</p>
+    </aside>
+
+    <h2 id="tecnologia">Tecnologia dentro de casa</h2>
+    <p>Assistentes de voz, lâmpadas e tomadas inteligentes, fechaduras eletrônicas e aspiradores robôs podem ser controlados por voz ou pelo celular. Para pessoas com dificuldade de movimento ou de visão, isso significa mais independência no dia a dia.</p>
+
+    <h2 id="checklist">Lista rápida para conferir sua casa</h2>
+    <ul>
+      <li>Dá para entrar em casa sem degrau ou com rampa?</li>
+      <li>As portas têm pelo menos 80 cm de vão livre?</li>
+      <li>O banheiro tem piso antiderrapante e barras de apoio?</li>
+      <li>Os corredores estão livres de tapetes soltos e fios?</li>
+      <li>A iluminação é boa em todos os cômodos, inclusive à noite?</li>
+      <li>Os objetos mais usados estão ao alcance das mãos?</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p><a href="#topo">Voltar ao topo</a></p>
+    <p>&copy; 2026 Acesso para Todos. Informação sobre acessibilidade e inclusão.</p>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <script src="js/acessibilidade.js"></script>
+</body>
+</html>
